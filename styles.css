@@ -1,0 +1,262 @@
+:root {
+  --blue-deep: #254892;
+  --blue-mid: #2f58a8;
+  --line: #c6cfdf;
+  --text: #1f2937;
+  --bg: #eef3fb;
+  --paper: #f8fbff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #dfe9ff 0%, transparent 40%),
+    radial-gradient(circle at 100% 20%, #e3f5ff 0%, transparent 34%),
+    var(--bg);
+}
+
+.app {
+  max-width: 1180px;
+  margin: 24px auto;
+  border: 1px solid #9eaac0;
+  background: var(--paper);
+  box-shadow: 0 14px 28px rgba(18, 40, 86, 0.16);
+}
+
+.top-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #b7c1d4;
+  background: #f0f2f9;
+}
+
+.tab {
+  border: 1px solid #9fa8ba;
+  background: #e8edf8;
+  color: #2d3f63;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: #dfe6f6;
+}
+
+.tab-note {
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  color: #3e4a67;
+}
+
+.controls {
+  padding: 16px 18px 10px;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+
+select {
+  border: 1px solid #99a7c3;
+  padding: 4px 8px;
+  min-width: 170px;
+  background: #fff;
+  font-family: inherit;
+}
+
+.helper-text {
+  color: #7d879b;
+}
+
+.mode-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.radio-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: 180ms ease;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+.radio-pill:hover {
+  border-color: #7d95ca;
+}
+
+.radio-pill.active {
+  border-color: #4b7ad9;
+  box-shadow: inset 0 0 0 1px #8db0ff;
+  background: #f0f6ff;
+}
+
+.radio-pill input {
+  margin: 0;
+}
+
+.title {
+  margin: 8px 0 14px;
+  text-align: center;
+  color: #99222b;
+  font-size: 40px;
+  letter-spacing: 0.1px;
+}
+
+.title span {
+  color: #7f899e;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.schedule-wrap {
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 1120px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.schedule-table thead th {
+  background: linear-gradient(180deg, var(--blue-mid), var(--blue-deep));
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 12px 6px;
+}
+
+.corner-cell {
+  width: 108px;
+}
+
+.session-label {
+  width: 108px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #3f5da8, #2c4c95);
+  padding: 16px 8px;
+}
+
+.schedule-table td {
+  height: 280px;
+  padding: 4px;
+  background: #fff;
+}
+
+.course {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  margin: 2px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.course h3 {
+  margin: 0 0 4px;
+  font-size: 22px;
+  line-height: 1.04;
+  font-weight: 800;
+}
+
+.course p {
+  margin: 3px 0;
+}
+
+.pink {
+  background: #ce3668;
+}
+
+.magenta {
+  background: #b02866;
+}
+
+.brown {
+  background: #897072;
+}
+
+.purple {
+  background: #5b5c97;
+}
+
+.fuchsia {
+  background: #b33166;
+}
+
+.teal {
+  background: #2d7587;
+}
+
+.orange {
+  background: #d37d2f;
+}
+
+.olive {
+  background: #708842;
+}
+
+.green-dark {
+  background: #3e6134;
+}
+
+.cyan {
+  background: #3ca4b8;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 31px;
+  }
+
+  .schedule-table thead th {
+    font-size: 18px;
+  }
+
+  .session-label {
+    font-size: 19px;
+  }
+
+  .course h3 {
+    font-size: 18px;
+  }
+
+  .course {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thoi khoa bieu tong quat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="top-tabs" aria-label="Chon nganh">
+        <button class="tab">Nganh 1 | Main major</button>
+        <button class="tab">Nganh 2 | Second major</button>
+        <p class="tab-note"><strong>Ban dang chon nganh 1</strong> | You're choosing a main major</p>
+      </section>
+
+      <section class="controls" aria-label="Bo loc hoc ky">
+        <div class="controls-row">
+          <label for="semester-view">Chon hoc ky can xem thoi khoa bieu</label>
+          <select id="semester-view" name="semester-view">
+            <option>HK1/2017-2018</option>
+            <option>HK2/2017-2018</option>
+            <option selected>HK1/2020-2021</option>
+          </select>
+          <span class="helper-text">Hoc ky dang ky mon hoc hien tai la HK1/2020-2021</span>
+        </div>
+
+        <div class="mode-toggle" role="radiogroup" aria-label="Che do hien thi">
+          <label class="radio-pill">
+            <input type="radio" name="view-mode" value="weekly" />
+            <span>Xem thoi khoa bieu theo tuan | See the weekly schedule</span>
+          </label>
+          <label class="radio-pill active">
+            <input type="radio" name="view-mode" value="general" checked />
+            <span>Xem thoi khoa bieu tong quat | See the general schedule</span>
+          </label>
+        </div>
+      </section>
+
+      <h1 class="title">Xem thoi khoa bieu tong quat <span>| See the general schedule</span></h1>
+
+      <section class="schedule-wrap" aria-label="Bang thoi khoa bieu">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th class="corner-cell"></th>
+              <th>Thu 2 | Monday</th>
+              <th>Thu 3 | Tuesday</th>
+              <th>Thu 4 | Wednesday</th>
+              <th>Thu 5 | Thursday</th>
+              <th>Thu 6 | Friday</th>
+              <th>Thu 7 | Saturday</th>
+              <th>Chu nhat | Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="session-label">Morning</th>
+              <td>
+                <article class="course pink">
+                  <h3>Tieng Anh 1 | English Community 1</h3>
+                  <p>(001201 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 1 - 3</p>
+                  <p>Phong|Room: E0112</p>
+                  <p>Tuan hoc|Week: -2345678-012345-7-</p>
+                </article>
+                <article class="course magenta">
+                  <h3>Co so tin hoc 2 | Fundamentals of Informatics 2</h3>
+                  <p>(503022 - Nhom|Group: 56)</p>
+                  <p>Tiet|Period: 4 - 6</p>
+                  <p>Phong|Room: A609</p>
+                  <p>Tuan hoc|Week: -2345678-012345-78-</p>
+                </article>
+              </td>
+              <td></td>
+              <td>
+                <article class="course brown">
+                  <h3>Suc khoe nghe nghiep | Occupational Health</h3>
+                  <p>(903048 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 2 - 6</p>
+                  <p>Phong|Room: C401</p>
+                  <p>Tuan hoc|Week: -234567--</p>
+                </article>
+              </td>
+              <td>
+                <article class="course purple">
+                  <h3>Gioi thieu quan ly nguon nhan luc | Intro to HRM</h3>
+                  <p>(903049 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 2 - 6</p>
+                  <p>Phong|Room: C207</p>
+                  <p>Tuan hoc|Week: -234567--</p>
+                </article>
+              </td>
+              <td>
+                <article class="course fuchsia">
+                  <h3>Tieng Anh 1 | English Community 1</h3>
+                  <p>(001201 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 1 - 3</p>
+                  <p>Phong|Room: E0112</p>
+                  <p>Tuan hoc|Week: -2345678-012345-</p>
+                </article>
+                <article class="course teal">
+                  <h3>Phap luat dai cuong | Introduction to Laws</h3>
+                  <p>(302053 - Nhom|Group: 18)</p>
+                  <p>Tiet|Period: 4 - 6</p>
+                  <p>Phong|Room: B404</p>
+                  <p>Tuan hoc|Week: -2345678-012-</p>
+                </article>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th class="session-label">Afternoon</th>
+              <td>
+                <article class="course orange">
+                  <h3>GDTC 1 - Cau long | Physical Education 1</h3>
+                  <p>(D1104 - Nhom|Group: 3)</p>
+                  <p>Tiet|Period: 7 - 9</p>
+                  <p>Phong|Room: BT13</p>
+                  <p>Tuan hoc|Week: -2345678-012345-78-</p>
+                </article>
+              </td>
+              <td></td>
+              <td>
+                <article class="course olive">
+                  <h3>Ve sinh lao dong va doc chat hoc 1</h3>
+                  <p>(903050 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 7 - 9</p>
+                  <p>Phong|Room: C301</p>
+                  <p>Tuan hoc|Week: -2345678-012-</p>
+                </article>
+                <article class="course green-dark">
+                  <h3>Sinh hoat chuyen khoa MT-BHLD</h3>
+                  <p>(BHSH01 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 10 - 12</p>
+                  <p>Phong|Room: C302</p>
+                  <p>Tuan hoc|Week: -2-4-6-8-0-2-</p>
+                </article>
+              </td>
+              <td>
+                <article class="course cyan">
+                  <h3>Co khi dai cuong | General Mechanics</h3>
+                  <p>(903051 - Nhom|Group: 1)</p>
+                  <p>Tiet|Period: 7 - 9</p>
+                  <p>Phong|Room: C401</p>
+                  <p>Tuan hoc|Week: -2345678-012-</p>
+                </article>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
