@@ -17,18 +17,24 @@
       <section class="top-tabs" aria-label="Chọn ngành">
         <button class="tab">Ngành chính 1</button>
         <button class="tab">Ngành chính 2</button>
-        <p class="tab-note"><strong>Bạn đang chọn ngành chính 1</strong></p>
+        <div class="top-right">
+          <p class="tab-note"><strong>Bạn đang chọn ngành chính 1</strong></p>
+          <div class="student-field" aria-label="Thông tin sinh viên">
+            <p><strong>Họ tên:</strong> <span id="student-name">Nguyễn Hoàng Thùy Tiên</span></p>
+            <p><strong>MSSV:</strong> <span id="student-id">7772678</span></p>
+          </div>
+        </div>
       </section>
 
       <section class="controls" aria-label="Bộ lọc học kỳ">
         <div class="controls-row">
           <label for="semester-view">Chọn học kỳ cần xem thời khóa biểu</label>
           <select id="semester-view" name="semester-view">
-            <option>HK1/2017-2018</option>
-            <option>HK2/2017-2018</option>
-            <option selected>HK1/2020-2021</option>
+            <option>HK1/2025-2026</option>
+            <option>HK2/2026-2027</option>
+            <option selected>HK1/2025-2026</option>
           </select>
-          <span class="helper-text">Học kỳ đăng ký môn học hiện tại là HK1/2020-2021</span>
+          <span class="helper-text">Học kỳ đăng ký môn học hiện tại là HK1/2025-2026</span>
         </div>
 
         <div class="mode-toggle" role="radiogroup" aria-label="Chế độ hiển thị">
