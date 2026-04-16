@@ -8,10 +8,10 @@ modeInputs.forEach((input) => {
     });
 
     if (input.value === 'weekly') {
-      title.innerHTML = 'Xem thoi khoa bieu theo tuan <span>| See the weekly schedule</span>';
+      title.innerHTML = 'Xem thời khóa biểu theo tuần <span>Hệ đào tạo chính quy</span>';
       return;
     }
 
-    title.innerHTML = 'Xem thoi khoa bieu tong quat <span>| See the general schedule</span>';
+    title.innerHTML = 'Xem thời khóa biểu tổng quát <span>Hệ đào tạo chính quy</span>';
   });
 });
